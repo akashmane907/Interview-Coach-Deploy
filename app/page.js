@@ -1,11 +1,7 @@
-import { Button } from "@/components/ui/button";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div >
-      <h1>hello there! </h1>
-      <Button>subcribe!</Button>
-
-    </div>
-  );
+  // Redirect to /dashboard immediately when visiting /
+  redirect("/dashboard");
+  return null; // Return null since this component won't render anything
 }
